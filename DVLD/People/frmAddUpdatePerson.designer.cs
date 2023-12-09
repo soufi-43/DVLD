@@ -336,9 +336,7 @@
             this.pictureBox2.TabIndex = 94;
             this.pictureBox2.TabStop = false;
             // 
-            //
-            //
-            // DateOfBirth
+            // dtpDateOfBirth
             // 
             this.dtpDateOfBirth.CustomFormat = "dd/M/yyyy";
             this.dtpDateOfBirth.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
@@ -536,6 +534,7 @@
             // 
             // btnSave
             // 
+            this.btnSave.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSave.Image = global::DVLD.Properties.Resources.Save_32;
             this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;

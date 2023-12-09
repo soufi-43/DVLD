@@ -14,3 +14,6 @@ C:\Users\Administrator\source\repos\DVLD Remote hole Project\DVLD\obj\Debug\DVLD
 C:\Users\Administrator\source\repos\DVLD Remote hole Project\DVLD\obj\Debug\DVLD.exe
 C:\Users\Administrator\source\repos\DVLD Remote hole Project\DVLD\obj\Debug\DVLD.pdb
 C:\Users\Administrator\source\repos\DVLD Remote hole Project\DVLD\obj\Debug\DVLD.frmMain.resources
+C:\Users\Administrator\source\repos\DVLD Remote hole Project\DVLD\obj\Debug\DVLD.Controls.ctrlPersonCard.resources
+C:\Users\Administrator\source\repos\DVLD Remote hole Project\DVLD\obj\Debug\DVLD.Controls.ctrlPersonCardWithFilter.resources
+C:\Users\Administrator\source\repos\DVLD Remote hole Project\DVLD\obj\Debug\DVLD.People.frmAddUpdatePerson.resources
