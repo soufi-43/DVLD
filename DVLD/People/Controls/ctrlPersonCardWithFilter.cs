@@ -102,7 +102,7 @@ namespace DVLD.Controls
            
             if ( OnPersonSelected !=null && FilterEnabled)
                 // Raise the event with a parameter
-              OnPersonSelected  (ctrlPersonCard1.PersonID);
+              OnPersonSelected(ctrlPersonCard1.PersonID);
 
             
         }
