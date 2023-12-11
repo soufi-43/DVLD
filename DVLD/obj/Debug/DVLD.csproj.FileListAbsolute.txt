@@ -23,3 +23,8 @@ C:\Users\Administrator\source\repos\DVLD Remote hole Project\DVLD\obj\Debug\DVLD
 C:\Users\Administrator\source\repos\DVLD Remote hole Project\DVLD\obj\Debug\DVLD.Controls.ctrlUserCard.resources
 C:\Users\Administrator\source\repos\DVLD Remote hole Project\DVLD\obj\Debug\DVLD.User.frmAddUpdateUser.resources
 C:\Users\Administrator\source\repos\DVLD Remote hole Project\DVLD\obj\Debug\DVLD.User.frmUserInfo.resources
+C:\Users\Administrator\source\repos\DVLD Remote hole Project\DVLD\obj\Debug\DVLD.Login.frmLogin.resources
+C:\Users\Administrator\source\repos\DVLD Remote hole Project\DVLD\obj\Debug\DVLD.User.frmChangePassword.resources
+C:\Users\Administrator\source\repos\DVLD Remote hole Project\DVLD\obj\Debug\DVLD.User.frmListUsers.resources
+C:\Users\Administrator\source\repos\DVLD Remote hole Project\DVLD\obj\Debug\DVLD.Applications.frmEditApplicationType.resources
+C:\Users\Administrator\source\repos\DVLD Remote hole Project\DVLD\obj\Debug\DVLD.Applications.frmListApplicationTypes.resources
