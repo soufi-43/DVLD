@@ -1,4 +1,7 @@
 ﻿
+using DVLD.Classes;
+using DVLD.Login;
+using DVLD.User;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
@@ -9,18 +12,31 @@ namespace DVLD
 
     public partial class frmMain : Form
     {
-        
+        frmLogin _frmLogin;
 
-        public frmMain()
+        public frmMain(frmLogin frm)
         {
             InitializeComponent();
-            
+            _frmLogin = frm;
 
         }
 
         private void employeesToolStripMenuItem_Click(object sender, EventArgs e)
         {
            
+        }
+
+        private void signOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            clsGlobal.CurrentUser = null; 
+            _frmLogin.Show();
+            this.Close(); 
+        }
+
+        private void changePasswordToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmChangePassword frm = new frmChangePassword(clsGlobal.CurrentUser.UserID);
+            frm.ShowDialog(); 
         }
 
         /*private void localLicenseToolStripMenuItem_Click(object sender, EventArgs e)
