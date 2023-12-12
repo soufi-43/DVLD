@@ -21,8 +21,9 @@ namespace DVLD_Buisness
         public clsLicenseClass LicenseClassInfo;
         public string PersonFullName   
         {
-            get { 
-                return clsPerson.Find(ApplicantPersonID).FullName; 
+            get {
+                return base.PersonInfo.FullName; 
+                //return clsPerson.Find(ApplicantPersonID).FullName; 
             }   
             
         }
