@@ -167,7 +167,8 @@ namespace DVLD.Tests
             }
 
 
-            
+            frmTakeTest frm = new frmTakeTest(Appointment.TestAppointmentID, clsTestType.enTestType.VisionTest);
+            frm.ShowDialog();
 
 
         }
@@ -194,7 +195,8 @@ namespace DVLD.Tests
             }
 
 
-           
+            frmTakeTest frm = new frmTakeTest(Appointment.TestAppointmentID, clsTestType.enTestType.WrittenTest);
+            frm.ShowDialog();
 
         }
 
@@ -219,7 +221,8 @@ namespace DVLD.Tests
             }
 
 
-            
+            frmTakeTest frm = new frmTakeTest(Appointment.TestAppointmentID, clsTestType.enTestType.StreetTest);
+            frm.ShowDialog();
 
 
         }
@@ -228,7 +231,8 @@ namespace DVLD.Tests
         {
 
             int LocalDrivingLicenseApplicationID = (int)dgvLocalDrivingLicenseApplications.CurrentRow.Cells[0].Value;
-            
+            frmListTestAppointments frm = new frmListTestAppointments(LocalDrivingLicenseApplicationID, TestType);
+            frm.ShowDialog();
             //refresh
             frmListLocalDrivingLicesnseApplications_Load(null, null);
 
@@ -263,6 +267,8 @@ namespace DVLD.Tests
         {
 
             int LocalDrivingLicenseApplicationID = (int)dgvLocalDrivingLicenseApplications.CurrentRow.Cells[0].Value;
+            //frmIssueDriverLicenseFirstTime frm = new frmIssueDriverLicenseFirstTime(LocalDrivingLicenseApplicationID);
+            //frm.ShowDialog();
             //refresh
             frmListLocalDrivingLicesnseApplications_Load(null, null);
         }
@@ -329,6 +335,8 @@ namespace DVLD.Tests
 
             if (LicenseID != -1)
             {
+                //frmShowLicenseInfo frm = new frmShowLicenseInfo(LicenseID);
+                //frm.ShowDialog();
 
             }
             else
@@ -395,6 +403,8 @@ namespace DVLD.Tests
             int LocalDrivingLicenseApplicationID = (int)dgvLocalDrivingLicenseApplications.CurrentRow.Cells[0].Value;
             clsLocalDrivingLicenseApplication localDrivingLicenseApplication = clsLocalDrivingLicenseApplication.FindByLocalDrivingAppLicenseID(LocalDrivingLicenseApplicationID);
 
+            //frmShowPersonLicenseHistory frm = new frmShowPersonLicenseHistory(localDrivingLicenseApplication.ApplicantPersonID);
+            //frm.ShowDialog();
         }
 
         
