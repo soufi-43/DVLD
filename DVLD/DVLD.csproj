@@ -166,6 +166,12 @@
     <Compile Include="Tests\Test Types\frmListTestTypes.designer.cs">
       <DependentUpon>frmListTestTypes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tests\Test Types\frmScheduleTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tests\Test Types\frmScheduleTest.designer.cs">
+      <DependentUpon>frmScheduleTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="User\ctrlUserCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -262,6 +268,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Tests\Test Types\frmListTestTypes.resx">
       <DependentUpon>frmListTestTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tests\Test Types\frmScheduleTest.resx">
+      <DependentUpon>frmScheduleTest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User\ctrlUserCard.resx">
       <DependentUpon>ctrlUserCard.cs</DependentUpon>
