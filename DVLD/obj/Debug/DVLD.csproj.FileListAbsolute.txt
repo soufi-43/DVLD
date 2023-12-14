@@ -41,3 +41,6 @@ C:\Users\Administrator\source\repos\DVLD Remote hole Project\DVLD\obj\Debug\DVLD
 C:\Users\Administrator\source\repos\DVLD Remote hole Project\DVLD\obj\Debug\DVLD.Tests.frmListTestAppointments.resources
 C:\Users\Administrator\source\repos\DVLD Remote hole Project\DVLD\obj\Debug\DVLD.Tests.ctrlSecheduledTest.resources
 C:\Users\Administrator\source\repos\DVLD Remote hole Project\DVLD\obj\Debug\DVLD.Tests.frmTakeTest.resources
+C:\Users\Administrator\source\repos\DVLD Remote hole Project\DVLD\obj\Debug\DVLD.DriverLicense.ctrlDriverLicenseInfo.resources
+C:\Users\Administrator\source\repos\DVLD Remote hole Project\DVLD\obj\Debug\DVLD.Licenses.Controls.ctrlDriverLicenseInfoWithFilter.resources
+C:\Users\Administrator\source\repos\DVLD Remote hole Project\DVLD\obj\Debug\DVLD.DriverLicense.frmIssueDriverLicenseFirstTime.resources
