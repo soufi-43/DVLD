@@ -7,8 +7,7 @@ using DVLD.Tests;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
-
-
+using DVLD.Licenses;
 namespace DVLD
 {
 
@@ -57,6 +56,13 @@ namespace DVLD
         {
             frmListLocalDrivingLicesnseApplications frm = new frmListLocalDrivingLicesnseApplications();
             frm.ShowDialog();
+        }
+
+        private void renewDrivingLicenseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRenewLocalDrivingLicenseApplication frm = new frmRenewLocalDrivingLicenseApplication();
+            frm.ShowDialog();
+
         }
 
         /*private void localLicenseToolStripMenuItem_Click(object sender, EventArgs e)
@@ -126,12 +132,7 @@ namespace DVLD
 
         }
 
-        private void renewDrivingLicenseToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmRenewLocalDrivingLicenseApplication frm = new frmRenewLocalDrivingLicenseApplication();
-            frm.ShowDialog();
-
-        }
+        
 
        
 
