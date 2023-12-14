@@ -111,6 +111,7 @@ namespace DVLD_Buisness
             string Notes = "";
             float PaidFees = 0; bool IsActive = true; int CreatedByUserID = 1;
             byte IssueReason = 1;
+
             if (clsLicenseData.GetLicenseInfoByID(LicenseID,ref ApplicationID, ref DriverID, ref LicenseClass,
             ref IssueDate, ref ExpirationDate, ref Notes,
             ref PaidFees, ref IsActive,ref IssueReason, ref CreatedByUserID))
