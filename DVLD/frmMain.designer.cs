@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.msMainMenue = new System.Windows.Forms.MenuStrip();
+            this.lblLoggedInUser = new System.Windows.Forms.Label();
             this.servicesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.drivingLicensesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.oNewDrivingLicenseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -60,7 +61,6 @@
             this.changePasswordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.signOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lblLoggedInUser = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.msMainMenue.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -83,6 +83,16 @@
             this.msMainMenue.Size = new System.Drawing.Size(1370, 72);
             this.msMainMenue.TabIndex = 1;
             this.msMainMenue.Text = "menuStrip1";
+            // 
+            // lblLoggedInUser
+            // 
+            this.lblLoggedInUser.AutoSize = true;
+            this.lblLoggedInUser.BackColor = System.Drawing.SystemColors.Control;
+            this.lblLoggedInUser.Location = new System.Drawing.Point(1201, 1067);
+            this.lblLoggedInUser.Name = "lblLoggedInUser";
+            this.lblLoggedInUser.Size = new System.Drawing.Size(81, 16);
+            this.lblLoggedInUser.TabIndex = 4;
+            this.lblLoggedInUser.Text = "[UserName]";
             // 
             // servicesToolStripMenuItem
             // 
@@ -285,6 +295,7 @@
             this.peopleToolStripMenuItem.Name = "peopleToolStripMenuItem";
             this.peopleToolStripMenuItem.Size = new System.Drawing.Size(139, 68);
             this.peopleToolStripMenuItem.Text = "People";
+            this.peopleToolStripMenuItem.Click += new System.EventHandler(this.peopleToolStripMenuItem_Click);
             // 
             // driversToolStripMenuItem
             // 
@@ -293,6 +304,7 @@
             this.driversToolStripMenuItem.Name = "driversToolStripMenuItem";
             this.driversToolStripMenuItem.Size = new System.Drawing.Size(140, 68);
             this.driversToolStripMenuItem.Text = "Drivers";
+            this.driversToolStripMenuItem.Click += new System.EventHandler(this.driversToolStripMenuItem_Click);
             // 
             // employeesToolStripMenuItem
             // 
@@ -346,16 +358,6 @@
             this.signOutToolStripMenuItem.Size = new System.Drawing.Size(230, 38);
             this.signOutToolStripMenuItem.Text = "Sign &Out";
             this.signOutToolStripMenuItem.Click += new System.EventHandler(this.signOutToolStripMenuItem_Click);
-            // 
-            // lblLoggedInUser
-            // 
-            this.lblLoggedInUser.AutoSize = true;
-            this.lblLoggedInUser.BackColor = System.Drawing.SystemColors.Control;
-            this.lblLoggedInUser.Location = new System.Drawing.Point(1201, 1067);
-            this.lblLoggedInUser.Name = "lblLoggedInUser";
-            this.lblLoggedInUser.Size = new System.Drawing.Size(81, 16);
-            this.lblLoggedInUser.TabIndex = 4;
-            this.lblLoggedInUser.Text = "[UserName]";
             // 
             // pictureBox1
             // 

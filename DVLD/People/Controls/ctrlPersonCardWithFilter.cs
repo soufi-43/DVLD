@@ -76,7 +76,6 @@ namespace DVLD.Controls
 
         public void LoadPersonInfo(int PersonID )
         {
-
             cbFilterBy.SelectedIndex=1;
             txtFilterValue.Text =PersonID.ToString();
             FindNow();
@@ -89,7 +88,7 @@ namespace DVLD.Controls
             {
                 case "Person ID":
                     ctrlPersonCard1.LoadPersonInfo(int.Parse(txtFilterValue.Text));
-                   
+
                     break;
 
                 case "National No.":
@@ -99,13 +98,12 @@ namespace DVLD.Controls
                 default:
                     break;
             }
-           
-            if ( OnPersonSelected !=null && FilterEnabled)
-                // Raise the event with a parameter
-              OnPersonSelected(ctrlPersonCard1.PersonID);
 
-            
+            if (OnPersonSelected != null && FilterEnabled)
+                // Raise the event with a parameter
+                OnPersonSelected(ctrlPersonCard1.PersonID);
         }
+
 
         private void cbFilterBy_SelectedIndexChanged(object sender, EventArgs e)
         {

@@ -47,3 +47,6 @@ C:\Users\Administrator\source\repos\DVLD Remote hole Project\DVLD\obj\Debug\DVLD
 C:\Users\Administrator\source\repos\DVLD Remote hole Project\DVLD\obj\Debug\DVLD.Licenses.frmRenewLocalDrivingLicenseApplication.resources
 C:\Users\Administrator\source\repos\DVLD Remote hole Project\DVLD\obj\Debug\DVLD.DriverLicense.frmShowLicenseInfo.resources
 C:\Users\Administrator\source\repos\DVLD Remote hole Project\DVLD\obj\Debug\DVLD.Applications.ReplaceLostOrDamagedLicense.frmReplaceLostOrDamagedLicenseApplication.resources
+C:\Users\Administrator\source\repos\DVLD Remote hole Project\DVLD\obj\Debug\DVLD.Drivers.frmListDrivers.resources
+C:\Users\Administrator\source\repos\DVLD Remote hole Project\DVLD\obj\Debug\DVLD.Licenses.Local_Licenses.Controls.ctrlDriverLicenses.resources
+C:\Users\Administrator\source\repos\DVLD Remote hole Project\DVLD\obj\Debug\DVLD.Licenses.International_License.frmShowPersonLicenseHistory.resources
