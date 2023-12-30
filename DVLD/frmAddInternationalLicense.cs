@@ -25,12 +25,28 @@ namespace DVLD
         {
             
         }
-        
+
+
+        //submit using the static function 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            _InternationalLicense.ApplicationID = int.Parse(txtApplicationID.Text.ToString());
+            int ApplicationID = int.Parse(txtApplicationID.Text.ToString()); 
+            int DriverID =   int.Parse(txtDriverID.Text.ToString());
+            int IssuedByLocalLicenseID = int.Parse(txtUsedLocalLicenseID.Text.ToString());
+            DateTime IssueDate= dtIssueDate.Value; ;
+            DateTime ExpirationDate = dtExpirationDate.Value;
+            bool IsActive = chkIsActive.Checked;
+            int CreatedByUserID = int.Parse(txtUserCreator.Text.ToString());
+
+            clsInternationalLicensee.AddNewInternationalLicense(ApplicationID,DriverID,IssuedByLocalLicenseID,
+                IssueDate ,ExpirationDate ,IsActive , CreatedByUserID); 
+        }
+        // submit using the object 
+        /*private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            _InternationalLicense.ApplicationID =   int.Parse(txtApplicationID.Text.ToString());
             _InternationalLicense.CreatedByUserID = int.Parse(txtUserCreator.Text.ToString());
-            _InternationalLicense.DriverID = int.Parse(txtDriverID.Text.ToString());
+            _InternationalLicense.DriverID =        int.Parse(txtDriverID.Text.ToString());
             _InternationalLicense.IssuedByLocalLicenseID = int.Parse(txtUsedLocalLicenseID.Text.ToString());
             _InternationalLicense.IsActive = chkIsActive.Checked;
             _InternationalLicense.IssueDate = dtIssueDate.Value;
@@ -42,6 +58,7 @@ namespace DVLD
             {
                 MessageBox.Show("saved succefully"); 
             }
-        }
+
+        }*/
     }
 }
