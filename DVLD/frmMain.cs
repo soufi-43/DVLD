@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using DVLD.Licenses;
 using DVLD.Drivers;
 using DVLD.People;
+using DVLD.Applications.Rlease_Detained_License;
 
 namespace DVLD
 {
@@ -80,7 +81,16 @@ namespace DVLD
             Form frm = new frmListPeople();
             frm.ShowDialog();
         }
-        
+
+        private void ManageDetainedLicensestoolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            
+                frmListDetainedLicenses frm = new frmListDetainedLicenses();
+                frm.ShowDialog();
+
+           
+        }
+
 
 
         /*private void localLicenseToolStripMenuItem_Click(object sender, EventArgs e)
@@ -189,12 +199,7 @@ private void ReplacementLostOrDamagedDrivingLicenseToolStripMenuItem_Click(objec
 
 }
 
-private void ManageDetainedLicensestoolStripMenuItem1_Click(object sender, EventArgs e)
-{
-   frmListDetainedLicenses frm = new frmListDetainedLicenses();
-   frm.ShowDialog();
 
-}
 
 private void detainLicenseToolStripMenuItem_Click(object sender, EventArgs e)
 {

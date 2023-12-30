@@ -21,6 +21,9 @@ namespace DVLD_Buisness
         public int DriverID { set; get; }
         public int LicenseClass { set; get; }
         public clsLicenseClass LicenseClassIfo;
+        
+
+
         public DateTime IssueDate { set; get; }
         public DateTime ExpirationDate { set; get; }
         public string Notes { set; get; }
@@ -91,6 +94,7 @@ namespace DVLD_Buisness
                this.IssueDate, this.ExpirationDate, this.Notes, this.PaidFees,
                this.IsActive,(byte) this.IssueReason, this.CreatedByUserID);
 
+            
 
             return (this.LicenseID != -1);
         }
