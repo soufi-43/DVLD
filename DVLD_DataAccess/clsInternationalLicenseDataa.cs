@@ -37,7 +37,7 @@ namespace DVLD_DataAccess
                     isFound = true;
                     ApplicationID = (int)reader["ApplicationID"];
                     DriverID = (int)reader["DriverID"];
-                    IssuedByLocalLicenseID = (int)reader["IssuedUsingLocalLicense"];
+                    IssuedByLocalLicenseID = (int)reader["IssuedUsingLocalLicenseID"];
                     IssueDate = (DateTime)reader["IssueDate"];
                     ExpirationDate = (DateTime)reader["ExpirationDate"];
                     IsActive = (bool)reader["isActive"];
@@ -214,5 +214,54 @@ namespace DVLD_DataAccess
 
             return internationalLicenseID;
         }
+
+        public static bool UpdateInternationalLicense(int InternationalLicenseID, int ApplicationID, int DriverID, int IssuedUsingLocalLicense,
+            DateTime IssueDate, DateTime ExpirationDate, bool IsActive, int CreatedByUserID)
+        {
+            int rowsAffected = 0;
+            SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
+
+            string query = @"UPDATE InternationalLicenses
+                           SET ApplicationID=@ApplicationID, 
+                              DriverID = @DriverID,
+                              IssuedUsingLocalLicenseID = @IssuedUsingLocalLicenseID , 
+                              IssueDate = @IssueDate,
+                              ExpirationDate = @ExpirationDate,
+                              IsActive = @IsActive,
+                              CreatedByUserID = @CreatedByUserID
+                         WHERE InternationalLicenseID=@InternationalLicenseID";
+
+            SqlCommand command = new SqlCommand(query, connection);
+            
+            command.Parameters.AddWithValue("@InternationalLicenseID", InternationalLicenseID);
+            command.Parameters.AddWithValue("@ApplicationID", ApplicationID);
+            command.Parameters.AddWithValue("@DriverID", DriverID);
+            command.Parameters.AddWithValue("@IssueDate", IssueDate);
+            command.Parameters.AddWithValue("@ExpirationDate", ExpirationDate);
+            command.Parameters.AddWithValue("@IssuedUsingLocalLicenseID", IssuedUsingLocalLicense);
+            command.Parameters.AddWithValue("@IsActive", IsActive);
+            command.Parameters.AddWithValue("@CreatedByUserID", CreatedByUserID);
+
+            try
+            {
+                connection.Open();
+                rowsAffected = command.ExecuteNonQuery();
+
+            }
+            catch (Exception ex)
+            {
+                //Console.WriteLine("Error: " + ex.Message);
+                return false;
+            }
+
+            finally
+            {
+                connection.Close();
+            }
+
+            return (rowsAffected > 0);
+        }
     }
+
+    
 }

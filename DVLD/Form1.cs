@@ -40,5 +40,11 @@ namespace DVLD
             frmAddInternationalLicense frm = new frmAddInternationalLicense();
             frm.ShowDialog();
         }
+
+        private void showLicenceInternationalInfoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmShowLicenceInternationalInfo frm = new frmShowLicenceInternationalInfo((int)dgvDetainedLicenses.CurrentRow.Cells[0].Value);
+            frm.ShowDialog(); 
+        }
     }
 }
