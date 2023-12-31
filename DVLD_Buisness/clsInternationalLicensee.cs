@@ -54,7 +54,7 @@ namespace DVLD_Buisness
             this.UserCreatorID = CreatedByUserID;
             this.UserCreatorInfo = clsUser.FindByUserID(UserCreatorID);
             this.LicenseInfo = clsLicenseClass.Find(this.LicenseClass);
-            this.Mode = enMode.AddNew;
+            this.Mode = enMode.Update;
         }
 
         public static clsInternationalLicensee GetInternationalLicenseByID(int InternationalLicenseID)
@@ -63,7 +63,7 @@ namespace DVLD_Buisness
             //InternationalLicenseID = 1;
             int ApplicationID = -1; int DriverID = 1; int IssuedByLocalLicenseID = 1;
             DateTime IssueDate = DateTime.Now; DateTime ExpirationDate = DateTime.Now; bool IsActive = true;
-            int CreatedByUserID = 1;
+            int CreatedByUserID = -1;
 
             if (clsInternationalLicenseDataa.GetInternationalLicenseByID(InternationalLicenseID, ref ApplicationID, ref DriverID,
                 ref IssuedByLocalLicenseID, ref IssueDate, ref ExpirationDate, ref IsActive, ref CreatedByUserID))
@@ -111,7 +111,11 @@ namespace DVLD_Buisness
 
         private bool _UpdateInternationalLicense()
         {
-            return false; 
+            
+            return clsInternationalLicenseDataa.UpdateInternationalLicense(this.InternationalLicenseID, this.ApplicationID, this.DriverID, this.IssuedByLocalLicenseID,
+                this.IssueDate, this.ExpirationDate, this.IsActive, this.UserCreatorID); 
+           
+            
         }
 
         public bool Save()

@@ -25,6 +25,7 @@ namespace DVLD
          
             InitializeComponent();
             _InternationalLicense = clsInternationalLicensee.GetInternationalLicenseByID(InternationalLicenseID);
+           
 
             //_InternationalLicenseID = _InternationalLicense.LicenseID; 
 
@@ -32,6 +33,7 @@ namespace DVLD
 
         private void frmShowLicenceInternationalInfo_Load(object sender, EventArgs e)
         {
+
 
             txtApplicationID.Text = _InternationalLicense.ApplicationID.ToString();
             txtDriverID.Text = _InternationalLicense.DriverID.ToString();
@@ -47,7 +49,10 @@ namespace DVLD
         private void btnUpdate_Click(object sender, EventArgs e)
         {
 
-            int InternationalLicenseID = _InternationalLicense.InternationalLicenseID; 
+            //updating using static method 
+
+
+            /*int InternationalLicenseID = _InternationalLicense.InternationalLicenseID; 
             int ApplicationID =int.Parse( txtApplicationID.Text ) ; 
             int DriverID = int.Parse(txtDriverID.Text);
             int IssuedUsingLocalLicense = int.Parse(txtUsedLocalLicenseID.Text)  ;
@@ -62,7 +67,23 @@ namespace DVLD
                IssueDate,ExpirationDate,IsActive,CreatedByUserID))
             {
                 MessageBox.Show("updated succefully"); 
-            } 
+            } */
+
+            // Update Using The Object 
+           
+            _InternationalLicense.ApplicationID = int.Parse(txtApplicationID.Text);
+            _InternationalLicense.DriverID = int.Parse(txtDriverID.Text);
+            _InternationalLicense.IssuedByLocalLicenseID = int.Parse(txtUsedLocalLicenseID.Text);
+            _InternationalLicense.IssueDate = dtIssueDate.Value;
+            _InternationalLicense.ExpirationDate= dtExpirationDate.Value;
+            _InternationalLicense.IsActive = chkIsActive.Checked;
+            _InternationalLicense.UserCreatorID= int.Parse(txtUserCreator.Text);
+
+
+            if (_InternationalLicense.Save())
+            {
+                MessageBox.Show("License Updated Succefully") ;
+            }
         }
     }
 }
