@@ -68,12 +68,17 @@ namespace DVLD_DataAccess
             return isFound;
         }
 
-        public static DataTable GetAllInternarionalLicenses()
+        public static DataTable GetAllInternationalLicenses()
         {
             DataTable dt = new DataTable();
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
 
-            string query = "SELECT * FROM InternationalLicenses";
+            string query = @"
+            SELECT    InternationalLicenseID, ApplicationID,DriverID,
+		                IssuedUsingLocalLicenseID , IssueDate, 
+                        ExpirationDate, IsActive
+		    from InternationalLicenses 
+                order by IsActive, ExpirationDate desc"; 
 
             SqlCommand command = new SqlCommand(query, connection);
 
