@@ -261,7 +261,51 @@ namespace DVLD_DataAccess
 
             return (rowsAffected > 0);
         }
+
+        public static DataTable GetActiveInternationalLicenseIDByDriverID(int DriverID)
+        {
+            DataTable dt =new DataTable();
+            SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
+
+            string query = "SELECT * FROM InternationalLicenses" +
+                " where DriverID=@DriverID and isActive=1";
+
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@ApplicationID", DriverID);
+
+            try
+            {
+                connection.Open();
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                if (reader.HasRows)
+
+                {
+                    dt.Load(reader);
+                }
+
+                reader.Close();
+
+
+            }
+
+            catch (Exception ex)
+            {
+                // Console.WriteLine("Error: " + ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+            return dt;
+
+        }
     }
+
+
+    
 
     
 }

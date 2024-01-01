@@ -44,6 +44,7 @@ namespace DVLD_Buisness
             DateTime ApplicationDate, 
              enApplicationStatus ApplicationStatus, DateTime LastStatusDate,
              float PaidFees, int CreatedByUserID, 
+
              int InternationalLicenseID,  int DriverID, int IssuedUsingLocalLicenseID,
             DateTime IssueDate, DateTime ExpirationDate,bool IsActive)
 

@@ -124,6 +124,12 @@
     <Compile Include="frmAddInternationalLicense.Designer.cs">
       <DependentUpon>frmAddInternationalLicense.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmListActiveLicences.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListActiveLicences.Designer.cs">
+      <DependentUpon>frmListActiveLicences.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -342,6 +348,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAddInternationalLicense.resx">
       <DependentUpon>frmAddInternationalLicense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListActiveLicences.resx">
+      <DependentUpon>frmListActiveLicences.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>

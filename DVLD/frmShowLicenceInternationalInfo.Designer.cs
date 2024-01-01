@@ -43,6 +43,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnActiveLicenses = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // dtExpirationDate
@@ -162,7 +163,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(522, 277);
+            this.btnUpdate.Location = new System.Drawing.Point(554, 277);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 23);
             this.btnUpdate.TabIndex = 28;
@@ -170,11 +171,22 @@
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
+            // btnActiveLicenses
+            // 
+            this.btnActiveLicenses.Location = new System.Drawing.Point(650, 277);
+            this.btnActiveLicenses.Name = "btnActiveLicenses";
+            this.btnActiveLicenses.Size = new System.Drawing.Size(106, 23);
+            this.btnActiveLicenses.TabIndex = 29;
+            this.btnActiveLicenses.Text = "ListActiveLicense";
+            this.btnActiveLicenses.UseVisualStyleBackColor = true;
+            this.btnActiveLicenses.Click += new System.EventHandler(this.btnActiveLicenses_Click);
+            // 
             // frmShowLicenceInternationalInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnActiveLicenses);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.dtExpirationDate);
             this.Controls.Add(this.dtIssueDate);
@@ -215,5 +227,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnActiveLicenses;
     }
 }

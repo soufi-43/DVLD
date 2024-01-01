@@ -118,6 +118,12 @@ namespace DVLD_Buisness
             
         }
 
+
+        public static DataTable GetActiveInternationalLicenseIDByDriverID(int DriverID)
+        {
+            return clsInternationalLicenseDataa.GetActiveInternationalLicenseIDByDriverID(DriverID);
+        }
+
         public bool Save()
         {
             switch (Mode)

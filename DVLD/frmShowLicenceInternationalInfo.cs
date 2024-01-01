@@ -52,7 +52,7 @@ namespace DVLD
             //updating using static method 
 
 
-            /*int InternationalLicenseID = _InternationalLicense.InternationalLicenseID; 
+            int InternationalLicenseID = _InternationalLicense.InternationalLicenseID; 
             int ApplicationID =int.Parse( txtApplicationID.Text ) ; 
             int DriverID = int.Parse(txtDriverID.Text);
             int IssuedUsingLocalLicense = int.Parse(txtUsedLocalLicenseID.Text)  ;
@@ -67,11 +67,11 @@ namespace DVLD
                IssueDate,ExpirationDate,IsActive,CreatedByUserID))
             {
                 MessageBox.Show("updated succefully"); 
-            } */
+            } 
 
             // Update Using The Object 
            
-            _InternationalLicense.ApplicationID = int.Parse(txtApplicationID.Text);
+           /* _InternationalLicense.ApplicationID = int.Parse(txtApplicationID.Text);
             _InternationalLicense.DriverID = int.Parse(txtDriverID.Text);
             _InternationalLicense.IssuedByLocalLicenseID = int.Parse(txtUsedLocalLicenseID.Text);
             _InternationalLicense.IssueDate = dtIssueDate.Value;
@@ -83,7 +83,13 @@ namespace DVLD
             if (_InternationalLicense.Save())
             {
                 MessageBox.Show("License Updated Succefully") ;
-            }
+            }*/
+        }
+
+        private void btnActiveLicenses_Click(object sender, EventArgs e)
+        {
+            frmListActiveLicences frm = new frmListActiveLicences(_InternationalLicense.DriverID);
+            frm.ShowDialog(); 
         }
     }
 }
