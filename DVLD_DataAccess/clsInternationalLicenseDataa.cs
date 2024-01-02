@@ -12,7 +12,8 @@ namespace DVLD_DataAccess
 {
     public class clsInternationalLicenseDataa
     {
-        public static bool  GetInternationalLicenseByID(int InternationalLicenseID, ref int ApplicationID, ref int DriverID, ref int IssuedByLocalLicenseID,
+        public static bool GetInternationalLicenseInfoByID(int InternationalLicenseID, 
+            ref int ApplicationID, ref int DriverID, ref int IssuedByLocalLicenseID,
             ref DateTime IssueDate, ref DateTime ExpirationDate, ref bool IsActive, ref int CreatedByUserID)
         {
             bool isFound = false;
