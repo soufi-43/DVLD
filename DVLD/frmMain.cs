@@ -91,6 +91,13 @@ namespace DVLD
            
         }
 
+        private void internationalLicenseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmNewInternationalLicenseApplication frm = new frmNewInternationalLicenseApplication();
+            frm.ShowDialog();
+
+        }
+
 
 
         /*private void localLicenseToolStripMenuItem_Click(object sender, EventArgs e)
@@ -143,13 +150,6 @@ private void manageTestTypesToolStripMenuItem_Click(object sender, EventArgs e)
    frm.ShowDialog();
 }
 
-private void internationalLicenseToolStripMenuItem_Click(object sender, EventArgs e)
-{
-
-   frmNewInternationalLicenseApplication frm = new frmNewInternationalLicenseApplication();
-   frm.ShowDialog();
-
-}
 
 
 

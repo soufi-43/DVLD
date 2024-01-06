@@ -94,7 +94,7 @@ namespace DVLD
 
         private void button1_Click(object sender, EventArgs e)
         {
-            frmAddInternationalLicense frm = new frmAddInternationalLicense();
+            frmNewInternationalLicenseApplication frm = new frmNewInternationalLicenseApplication();
             frm.ShowDialog(); 
         }
     }

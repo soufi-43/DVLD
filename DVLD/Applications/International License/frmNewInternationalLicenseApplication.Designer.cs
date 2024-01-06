@@ -1,6 +1,6 @@
 ﻿namespace DVLD
 {
-    partial class frmAddInternationalLicense
+    partial class frmNewInternationalLicenseApplication
     {
         /// <summary>
         /// Required designer variable.
@@ -86,10 +86,11 @@
             this.ctrlDriverLicenseInfoWithFilter1.BackColor = System.Drawing.Color.White;
             this.ctrlDriverLicenseInfoWithFilter1.FilterEnabled = true;
             this.ctrlDriverLicenseInfoWithFilter1.Location = new System.Drawing.Point(6, 52);
-            this.ctrlDriverLicenseInfoWithFilter1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ctrlDriverLicenseInfoWithFilter1.Margin = new System.Windows.Forms.Padding(4);
             this.ctrlDriverLicenseInfoWithFilter1.Name = "ctrlDriverLicenseInfoWithFilter1";
             this.ctrlDriverLicenseInfoWithFilter1.Size = new System.Drawing.Size(874, 413);
             this.ctrlDriverLicenseInfoWithFilter1.TabIndex = 125;
+            this.ctrlDriverLicenseInfoWithFilter1.OnLicenseSelected += new System.Action<int>(this.ctrlDriverLicenseInfoWithFilter1_OnLicenseSelected);
             // 
             // gpApplicationInfo
             // 
@@ -429,7 +430,7 @@
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
             // 
-            // frmAddInternationalLicense
+            // frmNewInternationalLicenseApplication
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -444,8 +445,8 @@
             this.Controls.Add(this.lblTitle);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "frmAddInternationalLicense";
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "frmNewInternationalLicenseApplication";
             this.Text = "New International License";
             this.Load += new System.EventHandler(this.frmAddInternationalLicense_Load);
             this.gpApplicationInfo.ResumeLayout(false);

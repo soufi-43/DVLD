@@ -11,14 +11,14 @@ using System.Windows.Forms;
 
 namespace DVLD
 {
-    public partial class frmAddInternationalLicense : Form
+    public partial class frmNewInternationalLicenseApplication : Form
     {
 
         clsInternationalLicensee _InternationalLicense = new clsInternationalLicensee();
         clsApplication _Application = new clsApplication();
-        
-        
-        public frmAddInternationalLicense()
+
+        clsLicense _license = new clsLicense(); 
+        public frmNewInternationalLicenseApplication()
         {
             InitializeComponent();
         }
@@ -75,6 +75,14 @@ namespace DVLD
                 MessageBox.Show("international saved succefully"); 
             }
 
+        }
+
+        private void ctrlDriverLicenseInfoWithFilter1_OnLicenseSelected(int obj)
+        {
+            if (ctrlDriverLicenseInfoWithFilter1.SelectedLicenseInfo.LicenseClass!=3)
+            {
+                MessageBox.Show("you cannot not it is not class 3"); 
+            }
         }
     }
 }
