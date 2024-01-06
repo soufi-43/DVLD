@@ -24,7 +24,7 @@ namespace DVLD
 
          
             InitializeComponent();
-            _InternationalLicense = clsInternationalLicensee.GetInternationalLicenseByID(InternationalLicenseID);
+            _InternationalLicense = clsInternationalLicensee.Find(InternationalLicenseID);
            
 
             //_InternationalLicenseID = _InternationalLicense.LicenseID; 
@@ -37,8 +37,8 @@ namespace DVLD
 
             txtApplicationID.Text = _InternationalLicense.ApplicationID.ToString();
             txtDriverID.Text = _InternationalLicense.DriverID.ToString();
-            txtUsedLocalLicenseID.Text = _InternationalLicense.IssuedByLocalLicenseID.ToString();
-            txtUserCreator.Text = _InternationalLicense.UserCreatorID.ToString();
+            txtUsedLocalLicenseID.Text = _InternationalLicense.IssuedUsingLocalLicenseID.ToString();
+            txtUserCreator.Text = _InternationalLicense.CreatedByUserID.ToString();
             dtIssueDate.Text = _InternationalLicense.IssueDate.ToString();
             dtExpirationDate.Text = _InternationalLicense.ExpirationDate.ToString();
             chkIsActive.Checked = _InternationalLicense.IsActive;
@@ -52,7 +52,7 @@ namespace DVLD
             //updating using static method 
 
 
-            int InternationalLicenseID = _InternationalLicense.InternationalLicenseID; 
+            /*int InternationalLicenseID = _InternationalLicense.InternationalLicenseID; 
             int ApplicationID =int.Parse( txtApplicationID.Text ) ; 
             int DriverID = int.Parse(txtDriverID.Text);
             int IssuedUsingLocalLicense = int.Parse(txtUsedLocalLicenseID.Text)  ;
@@ -67,28 +67,34 @@ namespace DVLD
                IssueDate,ExpirationDate,IsActive,CreatedByUserID))
             {
                 MessageBox.Show("updated succefully"); 
-            } 
+            } */
 
             // Update Using The Object 
            
-           /* _InternationalLicense.ApplicationID = int.Parse(txtApplicationID.Text);
+            _InternationalLicense.ApplicationID = int.Parse(txtApplicationID.Text);
             _InternationalLicense.DriverID = int.Parse(txtDriverID.Text);
-            _InternationalLicense.IssuedByLocalLicenseID = int.Parse(txtUsedLocalLicenseID.Text);
+            _InternationalLicense.IssuedUsingLocalLicenseID = int.Parse(txtUsedLocalLicenseID.Text);
             _InternationalLicense.IssueDate = dtIssueDate.Value;
             _InternationalLicense.ExpirationDate= dtExpirationDate.Value;
             _InternationalLicense.IsActive = chkIsActive.Checked;
-            _InternationalLicense.UserCreatorID= int.Parse(txtUserCreator.Text);
+            _InternationalLicense.CreatedByUserID= int.Parse(txtUserCreator.Text);
 
 
             if (_InternationalLicense.Save())
             {
                 MessageBox.Show("License Updated Succefully") ;
-            }*/
+            }
         }
 
         private void btnActiveLicenses_Click(object sender, EventArgs e)
         {
             frmListActiveLicences frm = new frmListActiveLicences(_InternationalLicense.DriverID);
+            frm.ShowDialog(); 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmAddInternationalLicense frm = new frmAddInternationalLicense();
             frm.ShowDialog(); 
         }
     }

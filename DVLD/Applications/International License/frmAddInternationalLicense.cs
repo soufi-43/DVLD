@@ -15,7 +15,9 @@ namespace DVLD
     {
 
         clsInternationalLicensee _InternationalLicense = new clsInternationalLicensee();
-
+        clsApplication _Application = new clsApplication();
+        
+        
         public frmAddInternationalLicense()
         {
             InitializeComponent();
@@ -28,7 +30,7 @@ namespace DVLD
 
 
         //submit using the static function 
-        private void btnSubmit_Click(object sender, EventArgs e)
+        /*private void btnSubmit_Click(object sender, EventArgs e)
         {
             int ApplicationID = int.Parse(txtApplicationID.Text.ToString()); 
             int DriverID =   int.Parse(txtDriverID.Text.ToString());
@@ -40,25 +42,39 @@ namespace DVLD
 
             clsInternationalLicensee.AddNewInternationalLicense(ApplicationID,DriverID,IssuedByLocalLicenseID,
                 IssueDate ,ExpirationDate ,IsActive , CreatedByUserID); 
-        }
+        }*/
         // submit using the object 
-        /*private void btnSubmit_Click(object sender, EventArgs e)
+        private void btnSubmit_Click(object sender, EventArgs e)
         {
-            _InternationalLicense.ApplicationID =   int.Parse(txtApplicationID.Text.ToString());
+           
+
+            /*_InternationalLicense.ApplicationID =   int.Parse(txtApplicationID.Text.ToString());
             _InternationalLicense.CreatedByUserID = int.Parse(txtUserCreator.Text.ToString());
             _InternationalLicense.DriverID =        int.Parse(txtDriverID.Text.ToString());
-            _InternationalLicense.IssuedByLocalLicenseID = int.Parse(txtUsedLocalLicenseID.Text.ToString());
+            _InternationalLicense.IssuedUsingLocalLicenseID = int.Parse(txtUsedLocalLicenseID.Text.ToString());
             _InternationalLicense.IsActive = chkIsActive.Checked;
             _InternationalLicense.IssueDate = dtIssueDate.Value;
             _InternationalLicense.ExpirationDate = dtExpirationDate.Value;
+            _InternationalLicense.ApplicantPersonID = clsUser.FindByUserID(_InternationalLicense.CreatedByUserID).PersonID;
+            */
 
 
+           /* _Application.ApplicationID = _InternationalLicense.ApplicationID;
+            _Application.ApplicantPersonID = clsUser.FindByUserID(_InternationalLicense.CreatedByUserID).PersonID;
+            _Application.ApplicationDate = DateTime.Now;
+            _Application.ApplicationTypeID = (int)clsApplication.enApplicationType.NewInternationalLicense;
+            _Application.ApplicationStatus = clsApplication.enApplicationStatus.New; 
+            _Application.LastStatusDate = DateTime.Now;
+            _Application.PaidFees = 15; 
+            _Application.CreatedByUserID = _InternationalLicense.CreatedByUserID;*/
 
+
+           
             if (_InternationalLicense.Save())
             {
-                MessageBox.Show("saved succefully"); 
+                MessageBox.Show("international saved succefully"); 
             }
 
-        }*/
+        }
     }
 }

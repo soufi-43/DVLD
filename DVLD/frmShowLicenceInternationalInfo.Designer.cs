@@ -44,6 +44,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnActiveLicenses = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // dtExpirationDate
@@ -163,7 +164,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(554, 277);
+            this.btnUpdate.Location = new System.Drawing.Point(601, 277);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 23);
             this.btnUpdate.TabIndex = 28;
@@ -173,7 +174,7 @@
             // 
             // btnActiveLicenses
             // 
-            this.btnActiveLicenses.Location = new System.Drawing.Point(650, 277);
+            this.btnActiveLicenses.Location = new System.Drawing.Point(682, 277);
             this.btnActiveLicenses.Name = "btnActiveLicenses";
             this.btnActiveLicenses.Size = new System.Drawing.Size(106, 23);
             this.btnActiveLicenses.TabIndex = 29;
@@ -181,11 +182,22 @@
             this.btnActiveLicenses.UseVisualStyleBackColor = true;
             this.btnActiveLicenses.Click += new System.EventHandler(this.btnActiveLicenses_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(516, 73);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(216, 87);
+            this.button1.TabIndex = 30;
+            this.button1.Text = "Add New InternationalLicenseApplication";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmShowLicenceInternationalInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnActiveLicenses);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.dtExpirationDate);
@@ -228,5 +240,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnActiveLicenses;
+        private System.Windows.Forms.Button button1;
     }
 }
