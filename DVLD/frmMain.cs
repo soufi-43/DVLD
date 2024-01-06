@@ -11,6 +11,7 @@ using DVLD.Licenses;
 using DVLD.Drivers;
 using DVLD.People;
 using DVLD.Applications.Rlease_Detained_License;
+using DVLD.Applications.International_License;
 
 namespace DVLD
 {
@@ -94,6 +95,13 @@ namespace DVLD
         private void internationalLicenseToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmNewInternationalLicenseApplication frm = new frmNewInternationalLicenseApplication();
+            frm.ShowDialog();
+
+        }
+
+        private void ManageInternationaDrivingLicenseToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmListInternationalLicesnseApplications frm = new frmListInternationalLicesnseApplications();
             frm.ShowDialog();
 
         }
@@ -187,8 +195,7 @@ private void manageLocalDrivingLicenseApplicationsToolStripMenuItem_Click(object
 
 private void ManageInternationaDrivingLicenseToolStripMenuItem1_Click(object sender, EventArgs e)
 {
-   frmListInternationalLicesnseApplications frm = new frmListInternationalLicesnseApplications();
-   frm.ShowDialog();
+   
 
 }
 

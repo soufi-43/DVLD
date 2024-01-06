@@ -17,7 +17,7 @@ namespace DVLD
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmNewInternationalLicenseApplication());
+            Application.Run(new frmLogin());
         }
     }
 }

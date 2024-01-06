@@ -391,6 +391,7 @@
             this.llShowLicenseInfo.TabIndex = 181;
             this.llShowLicenseInfo.TabStop = true;
             this.llShowLicenseInfo.Text = "Show Licenses Info";
+            this.llShowLicenseInfo.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llShowLicenseInfo_LinkClicked);
             // 
             // llShowLicenseHistory
             // 
@@ -402,6 +403,7 @@
             this.llShowLicenseHistory.TabIndex = 180;
             this.llShowLicenseHistory.TabStop = true;
             this.llShowLicenseHistory.Text = "Show Licenses History";
+            this.llShowLicenseHistory.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llShowLicenseHistory_LinkClicked);
             // 
             // btnIssueLicense
             // 
@@ -415,6 +417,7 @@
             this.btnIssueLicense.TabIndex = 179;
             this.btnIssueLicense.Text = "Issue";
             this.btnIssueLicense.UseVisualStyleBackColor = true;
+            this.btnIssueLicense.Click += new System.EventHandler(this.btnIssueLicense_Click);
             // 
             // btnClose
             // 
@@ -448,6 +451,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmNewInternationalLicenseApplication";
             this.Text = "New International License";
+            this.Activated += new System.EventHandler(this.frmNewInternationalLicenseApplication_Activated);
             this.Load += new System.EventHandler(this.frmAddInternationalLicense_Load);
             this.gpApplicationInfo.ResumeLayout(false);
             this.gpApplicationInfo.PerformLayout();
