@@ -133,6 +133,7 @@ namespace DVLD_DataAccess
 
             try
             {
+                
                 connection.Open();
                 SqlDataReader reader = command.ExecuteReader();
 
@@ -161,7 +162,8 @@ namespace DVLD_DataAccess
             catch (Exception ex)
             {
                 //Console.WriteLine("Error: " + ex.Message);
-
+                clsLoggerError.LoggerError(ex.Message); 
+                
                 isFound = false;
             }
             finally

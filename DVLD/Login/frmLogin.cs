@@ -77,10 +77,13 @@ namespace DVLD.Login
                 txtUserName.Text = UserName;
                 txtPassword.Text = Password;
                 chkRememberMe.Checked = true;
+                
             }
             else
                 chkRememberMe.Checked = false;
 
         }
+
+        
     }
 }
