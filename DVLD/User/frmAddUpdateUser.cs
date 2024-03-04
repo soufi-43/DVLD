@@ -119,7 +119,11 @@ namespace DVLD.User
 
             _User.PersonID = ctrlPersonCardWithFilter1.PersonID;
             _User.UserName = txtUserName.Text.Trim();
-            _User.Password = txtPassword.Text.Trim();
+            _User.Password =   txtPassword.Text.Trim();
+           
+            _User.Password = _User.HashedPass;
+            
+
             _User.IsActive = chkIsActive.Checked;
 
 

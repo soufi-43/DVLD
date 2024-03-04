@@ -1,7 +1,11 @@
 ﻿using System;
 using System.Data;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+using System.Security.Cryptography;
+using System.Text;
 using DVLD_DataAccess;
+
 
 namespace DVLD_Buisness
 {
@@ -15,6 +19,15 @@ namespace DVLD_Buisness
         public clsPerson PersonInfo;
         public string UserName { set; get; }
         public string Password { set; get; }
+
+        public string HashedPass {
+            get
+            {
+                return HashedPassword(Password);
+            }
+            
+        }
+        
         public bool IsActive { set; get; }
      
         public clsUser()
@@ -44,9 +57,9 @@ namespace DVLD_Buisness
         private bool _AddNewUser()
         {
             //call DataAccess Layer 
-
+            
             this.UserID = clsUserData.AddNewUser(this.PersonID,this.UserName,
-                this.Password,this.IsActive);
+                this.HashedPass,this.IsActive);
 
             return (this.UserID != -1);
         }
@@ -93,7 +106,7 @@ namespace DVLD_Buisness
             int PersonID=-1;
 
             bool IsActive = false;
-
+            Password = HashedPassword(Password); // i used 11 as password i hashed 11 on 256 sha
             bool IsFound = clsUserData.GetUserInfoByUsernameAndPassword
                                 (UserName , Password,ref UserID,ref PersonID, ref IsActive);
 
@@ -154,6 +167,16 @@ namespace DVLD_Buisness
         public static bool isUserExistForPersonID(int PersonID)
         {
             return clsUserData.IsUserExistForPersonID(PersonID);
+        }
+
+        private static string HashedPassword(string input)
+        {
+            using (SHA256 sHA256 = SHA256.Create())
+            {
+                byte[] hashBytes = sHA256.ComputeHash(Encoding.UTF8.GetBytes(input));
+
+                return BitConverter.ToString(hashBytes).Replace("-", "").ToLower();
+            }
         }
 
 
