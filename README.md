@@ -5,16 +5,16 @@
 ## Table of Contents
 1. [Overview](#overview)
 2. [Core Services and Requirements](#Core-Services-and-Requirements)
-3. [Request Type Management](#request-type-management)
-4. [Test Management](#test-management)
-5. [License Category Management](#license-category-management)
-6. [License Reservation](#license-reservation)
+3. [Features](#Features)
+4. [Document and Test Requirements](#Document-and-Test-Requirements)
+5. [Architecture](#Architecture)
+6. [Application Features](#Application-Features)
 7. [System Logging](#system-logging)
 
 ---
 
 ### Overview
-This document outlines the requirements for a system that manages people, requests, tests, license categories, and license reservations. Each section describes specific functionality, data requirements, and rules for managing entities within the system.
+This project outlines the requirements for a system that manages people, requests, tests, license categories , and license reservations. Each section describes specific functionality, data requirements, and rules for managing entities within the system.
 
 ---
 
@@ -58,7 +58,7 @@ Only one unique record per applicant in the system, used for all subsequent appl
 
 Each license category has specific requirements such as minimum age, validity duration, and fees.
 System ensures compliance with age and prior license conditions for each class.
-### Document and Test Requirements
+### Document-and-Test-Requirements
 
 #### Vision Test: Medical examination to check visual acuity; fee applies, and results must be recorded.
 #### Theoretical Exam: Covers traffic laws and safety; fee applies, scored out of 100.
@@ -75,7 +75,36 @@ Supports integration with other services for additional verification.
 Inquiries
 
 Enables lookup of licenses held by individuals based on national ID or license number.
-## Features
+## Architecture
+This License Management System was developed with a **3-tier architecture** to ensure modularity, scalability, and maintainability. The layers include:
+
+1. **Presentation Layer**  
+   - Handles user interaction and UI logic.
+   - Developed using WinForms for a desktop application or ASP.NET for web-based interaction.
+  
+2. **Business Logic Layer (BLL)**  
+   - Processes data between the presentation layer and the data access layer.
+   - Contains the core business logic to ensure the integrity and accuracy of transactions.
+
+3. **Data Access Layer (DAL)**  
+   - Directly communicates with the SQL Server database.
+   - Handles data retrieval, storage, and modifications through T-SQL and stored procedures.
+   - Implements secure connections and encryption for data transactions, enhancing data protection.
+
+### Related Skills
+- **T-SQL**: Used to efficiently manage complex queries and optimize database interactions. Benefits of T-SQL include improved data handling, enhanced security features, and robust transaction management.
+- **Stored Procedures**: Enables efficient data handling and reduces redundancy in SQL code. Stored procedures improve performance and increase security by centralizing and encapsulating SQL operations.
+- **Encryption**: Applied to the logging system, ensuring sensitive information (such as user actions and authentication details) is securely stored.
+
+## Data Management
+All data operations are managed with a focus on data consistency, security, and performance. Unique constraints, referential integrity, and optimized indexing are applied to ensure smooth and reliable data operations. The logging system additionally includes encrypted entries to safeguard user activity records.
+
+
+## Usage
+1. Launch the application and authenticate with  next credentials username : Msaqr77 password : 1234 .
+2. Use the interface to manage individuals, requests, exams, licenses, and view logs.
+
+## Application Features
 - **Person Management**: Add, edit, view, and delete person records.
 - **Request Management**: Handle different request types, including price information.
 - **Test Management**: Modify test prices for predefined tests.
@@ -84,10 +113,8 @@ Enables lookup of licenses held by individuals based on national ID or license n
 - **System Logging**: Log every action with user and date information for audit purposes.
 
 ## System Requirements
-- **Operating System**: Windows, macOS, or Linux
-- **Database**: SQL Server or compatible RDBMS
+- **Database**: SQL Server 
 - **Languages**: .NET Framework for backend
-- **Framework**: .NET 6 or higher
 
 ## Installation
 1. **Clone the repository**:
