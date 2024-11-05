@@ -4,7 +4,7 @@
 
 ## Table of Contents
 1. [Overview](#overview)
-2. [Person Management](#person-management)
+2. [Core Services and Requirements](#Core-Services-and-Requirements)
 3. [Request Type Management](#request-type-management)
 4. [Test Management](#test-management)
 5. [License Category Management](#license-category-management)
@@ -18,7 +18,7 @@ This document outlines the requirements for a system that manages people, reques
 
 ---
 
-Core Services and Requirements
+## Core-Services-and-Requirements 
 ### New License Issuance
 
 Initial license applications for specific categories (e.g., motorcycle, regular car, commercial).
@@ -60,9 +60,9 @@ Each license category has specific requirements such as minimum age, validity du
 System ensures compliance with age and prior license conditions for each class.
 ### Document and Test Requirements
 
-## Vision Test: Medical examination to check visual acuity; fee applies, and results must be recorded.
-## Theoretical Exam: Covers traffic laws and safety; fee applies, scored out of 100.
-## Practical Exam: Tests vehicle handling and rule compliance; fee varies by license category.
+#### Vision Test: Medical examination to check visual acuity; fee applies, and results must be recorded.
+#### Theoretical Exam: Covers traffic laws and safety; fee applies, scored out of 100.
+#### Practical Exam: Tests vehicle handling and rule compliance; fee varies by license category.
 System Administration
 ### User Management
 
