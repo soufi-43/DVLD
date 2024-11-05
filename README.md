@@ -8,8 +8,8 @@
 3. [Features](#Features)
 4. [Document and Test Requirements](#Document-and-Test-Requirements)
 5. [Architecture](#Architecture)
-6. [Application Features](#Application-Features)
-7. [System Logging](#system-logging)
+6. [Application Features](#Application Features)
+
 
 ---
 
