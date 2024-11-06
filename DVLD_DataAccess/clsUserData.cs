@@ -411,6 +411,45 @@ namespace DVLD_DataAccess
 
             return isFound;
         }
+        public static bool IsUserExists(int PersonID)
+        {
+            bool isFound = false;
+
+            SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
+
+            //string query = "SELECT Found=1 FROM People WHERE PersonID = @PersonID";
+
+            SqlCommand command = new SqlCommand("SP_CheckUserExists", connection);
+
+            command.CommandType = CommandType.StoredProcedure;
+            command.Parameters.AddWithValue("@UserID", PersonID);
+
+            try
+            {
+                connection.Open();
+                object result = command.ExecuteNonQuery();
+
+                if ((int)result == 1)
+                {
+                    isFound = true;
+                }
+                else
+                {
+                    return isFound;
+                }
+            }
+            catch (Exception ex)
+            {
+                //Console.WriteLine("Error: " + ex.Message);
+                isFound = false;
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+            return isFound;
+        }
 
         public static bool IsUserExistForPersonID(int PersonID)
         {
@@ -432,6 +471,106 @@ namespace DVLD_DataAccess
                 isFound = reader.HasRows;
 
                 reader.Close();
+            }
+            catch (Exception ex)
+            {
+                //Console.WriteLine("Error: " + ex.Message);
+                isFound = false;
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+            return isFound;
+        }
+
+
+        public static bool DoesUserExistByUserID(int? UserID)
+        {
+            bool IsFound = false;
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+                {
+                    connection.Open();
+
+                    using (SqlCommand command = new SqlCommand("SP_DoesUserExistByUserID", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+
+                        command.Parameters.AddWithValue("@UserID", (object)UserID ?? DBNull.Value);
+
+                        // @ReturnVal could be any name, and you don't need to add it to the SP, just use it here in the code.
+                        SqlParameter returnParameter = new SqlParameter("@ReturnVal", SqlDbType.Int)
+                        {
+                            Direction = ParameterDirection.ReturnValue
+                        };
+                        command.Parameters.Add(returnParameter);
+
+                       
+                        command.ExecuteNonQuery();
+                        IsFound = (int)returnParameter.Value == 1;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                IsFound = false;
+            }
+
+            return IsFound;
+        }
+        public static bool IsUserExistsForPersonID(int PersonID)
+        {
+            bool isFound = false;
+
+            SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
+
+            //string query = "SELECT Found=1 FROM Users WHERE PersonID = @PersonID";
+
+            SqlCommand command = new SqlCommand("SP_CheckPersonExists", connection);
+            command.CommandType = CommandType.StoredProcedure;
+
+            // Example ID
+
+            command.Parameters.AddWithValue("@PersonID", PersonID);
+            // retrieve result from stored procedure as 1 or 0 using direction ()
+            /*SqlParameter returnValue = new SqlParameter
+            {
+                Direction = ParameterDirection.ReturnValue
+            };
+
+            command.Parameters.Add(returnValue);
+
+            command.ExecuteScalar();
+
+            int result = Convert.ToInt32(returnValue.Value);
+
+            bool personExists = result == 1;
+
+            Console.WriteLine($"Person exists: {personExists}");
+
+            connection.Close();*/
+
+            try
+            {
+                connection.Open();
+                object result = command.ExecuteScalar();
+
+
+                if ((int)result == 1)
+                {
+                    isFound = true;
+                }
+                else
+                {
+                    return isFound;
+                }
+
+
+
             }
             catch (Exception ex)
             {

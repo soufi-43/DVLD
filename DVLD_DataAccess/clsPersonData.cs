@@ -264,6 +264,80 @@ namespace DVLD_DataAccess
             return PersonID;
         }
 
+        public static int AddNewPersonn(string FirstName, string SecondName,
+           string ThirdName, string LastName, string NationalNo, DateTime DateOfBirth,
+           short Gendor, string Address, string Phone, string Email,
+            int NationalityCountryID, string ImagePath)
+        {
+            //this function will return the new person id if succeeded and -1 if not.
+            int PersonID = -1;
+
+            SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
+
+          
+
+            SqlCommand command = new SqlCommand("SP_AddNewPerson", connection);
+
+            command.CommandType = CommandType.StoredProcedure; 
+
+            command.Parameters.AddWithValue("@FirstName", FirstName);
+            command.Parameters.AddWithValue("@SecondName", SecondName);
+
+            if (ThirdName != "" && ThirdName != null)
+                command.Parameters.AddWithValue("@ThirdName", ThirdName);
+            else
+                command.Parameters.AddWithValue("@ThirdName", System.DBNull.Value);
+
+            command.Parameters.AddWithValue("@LastName", LastName);
+            command.Parameters.AddWithValue("@NationalNo", NationalNo);
+            command.Parameters.AddWithValue("@DateOfBirth", DateOfBirth);
+            command.Parameters.AddWithValue("@Gendor", Gendor);
+            command.Parameters.AddWithValue("@Address", Address);
+            command.Parameters.AddWithValue("@Phone", Phone);
+
+            if (Email != "" && Email != null)
+                command.Parameters.AddWithValue("@Email", Email);
+            else
+                command.Parameters.AddWithValue("@Email", System.DBNull.Value);
+
+            command.Parameters.AddWithValue("@NationalityCountryID", NationalityCountryID);
+
+            if (ImagePath != "" && ImagePath != null)
+                command.Parameters.AddWithValue("@ImagePath", ImagePath);
+            else
+                command.Parameters.AddWithValue("@ImagePath", System.DBNull.Value);
+
+            SqlParameter outputIdParam = new SqlParameter("@PersonID", SqlDbType.Int)
+            {
+                Direction = ParameterDirection.Output
+            };
+            command.Parameters.Add(outputIdParam);
+            try
+            {
+                connection.Open();
+
+                object result = command.ExecuteNonQuery();
+
+                if (result != null )
+                {
+                    PersonID = (int)command.Parameters["@PersonID"].Value;
+
+                }
+            }
+
+            catch (Exception ex)
+            {
+                //Console.WriteLine("Error: " + ex.Message);
+            }
+
+            finally
+            {
+                connection.Close();
+            }
+
+            return PersonID;
+        }
+
 
 
         public static bool UpdatePerson(int PersonID,  string FirstName, string SecondName,
@@ -470,6 +544,45 @@ namespace DVLD_DataAccess
             return isFound;
         }
 
+        public static bool IsPersonExists(int PersonID)
+        {
+            bool isFound = false;
+
+            SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
+
+            //string query = "SELECT Found=1 FROM People WHERE PersonID = @PersonID";
+
+            SqlCommand command = new SqlCommand("SP_CheckPersonExists", connection);
+
+            command.CommandType = CommandType.StoredProcedure;
+            command.Parameters.AddWithValue("@PersonID", PersonID);
+
+            try
+            {
+                connection.Open();
+                object result = command.ExecuteNonQuery();
+
+                if ((int)  result== 1)
+                {
+                    isFound = true;
+                }
+                else
+                {
+                    return isFound; 
+                }
+            }
+            catch (Exception ex)
+            {
+                //Console.WriteLine("Error: " + ex.Message);
+                isFound = false;
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+            return isFound;
+        }
         public static bool IsPersonExist(string NationalNo)
         {
             bool isFound = false;
