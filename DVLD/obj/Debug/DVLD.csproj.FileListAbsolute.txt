@@ -6,11 +6,9 @@ C:\Users\Administrator\source\repos\DVLD Remote hole Project\DVLD\bin\Debug\DVLD
 C:\Users\Administrator\source\repos\DVLD Remote hole Project\DVLD\bin\Debug\DVLD_Buisness.pdb
 C:\Users\Administrator\source\repos\DVLD Remote hole Project\DVLD\bin\Debug\DVLD_DataAccess.pdb
 C:\Users\Administrator\source\repos\DVLD Remote hole Project\DVLD\obj\Debug\DVLD.csproj.AssemblyReference.cache
-C:\Users\Administrator\source\repos\DVLD Remote hole Project\DVLD\obj\Debug\DVLD.csproj.SuggestedBindingRedirects.cache
 C:\Users\Administrator\source\repos\DVLD Remote hole Project\DVLD\obj\Debug\DVLD.Properties.Resources.resources
 C:\Users\Administrator\source\repos\DVLD Remote hole Project\DVLD\obj\Debug\DVLD.csproj.GenerateResource.cache
 C:\Users\Administrator\source\repos\DVLD Remote hole Project\DVLD\obj\Debug\DVLD.csproj.CoreCompileInputs.cache
-C:\Users\Administrator\source\repos\DVLD Remote hole Project\DVLD\obj\Debug\DVLD.csproj.CopyComplete
 C:\Users\Administrator\source\repos\DVLD Remote hole Project\DVLD\obj\Debug\DVLD.exe
 C:\Users\Administrator\source\repos\DVLD Remote hole Project\DVLD\obj\Debug\DVLD.pdb
 C:\Users\Administrator\source\repos\DVLD Remote hole Project\DVLD\obj\Debug\DVLD.frmMain.resources
@@ -59,3 +57,4 @@ C:\Users\Administrator\source\repos\DVLD Remote hole Project\DVLD\obj\Debug\DVLD
 C:\Users\Administrator\source\repos\DVLD Remote hole Project\DVLD\obj\Debug\DVLD.Licenses.International_Licenses.Controls.ctrlDriverInternationalLicenseInfo.resources
 C:\Users\Administrator\source\repos\DVLD Remote hole Project\DVLD\obj\Debug\DVLD.Licenses.International_Licenses.frmShowInternationalLicenseInfo.resources
 C:\Users\Administrator\source\repos\DVLD Remote hole Project\DVLD\obj\Debug\DVLD.Applications.International_License.frmListInternationalLicesnseApplications.resources
+C:\Users\Administrator\source\repos\DVLD Remote hole Project\DVLD\obj\Debug\DVLD.csproj.Up2Date

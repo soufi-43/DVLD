@@ -1,0 +1,199 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\source\\repos\\DVLD Remote hole Project\\DVLD\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C1BE28AD-D036-4C77-964C-9EE4ACC6727A}|..\\DVLD_DataAccess\\DVLD_DataAccess.csproj|c:\\users\\administrator\\source\\repos\\dvld remote hole project\\dvld_dataaccess\\clsdataaccesssettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1BE28AD-D036-4C77-964C-9EE4ACC6727A}|..\\DVLD_DataAccess\\DVLD_DataAccess.csproj|c:\\users\\administrator\\source\\repos\\dvld remote hole project\\dvld_dataaccess\\clspersondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1BE28AD-D036-4C77-964C-9EE4ACC6727A}|..\\DVLD_DataAccess\\DVLD_DataAccess.csproj|c:\\users\\administrator\\source\\repos\\dvld remote hole project\\dvld_dataaccess\\clslicense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1BE28AD-D036-4C77-964C-9EE4ACC6727A}|..\\DVLD_DataAccess\\DVLD_DataAccess.csproj|c:\\users\\administrator\\source\\repos\\dvld remote hole project\\dvld_dataaccess\\clsdriver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1BE28AD-D036-4C77-964C-9EE4ACC6727A}|..\\DVLD_DataAccess\\DVLD_DataAccess.csproj|c:\\users\\administrator\\source\\repos\\dvld remote hole project\\dvld_dataaccess\\clsapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1BE28AD-D036-4C77-964C-9EE4ACC6727A}|..\\DVLD_DataAccess\\DVLD_DataAccess.csproj|c:\\users\\administrator\\source\\repos\\dvld remote hole project\\dvld_dataaccess\\clserrorlogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1BE28AD-D036-4C77-964C-9EE4ACC6727A}|..\\DVLD_DataAccess\\DVLD_DataAccess.csproj|c:\\users\\administrator\\source\\repos\\dvld remote hole project\\dvld_dataaccess\\clscountrydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1BE28AD-D036-4C77-964C-9EE4ACC6727A}|..\\DVLD_DataAccess\\DVLD_DataAccess.csproj|C:\\Users\\Administrator\\source\\repos\\DVLD Remote hole Project\\dvld_dataaccess\\clsuserdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46A8427B-DCFC-4DAF-A14C-E3F4789A993D}|..\\DVLD_Buisness\\DVLD_Buisness.csproj|C:\\Users\\Administrator\\source\\repos\\DVLD Remote hole Project\\dvld_buisness\\clsuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77F14716-65AF-4C28-92E4-16AB33BB2D53}|DVLD.csproj|C:\\Users\\Administrator\\source\\repos\\DVLD Remote hole Project\\DVLD\\user\\frmaddupdateuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77F14716-65AF-4C28-92E4-16AB33BB2D53}|DVLD.csproj|solutionrelative:user\\frmaddupdateuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77F14716-65AF-4C28-92E4-16AB33BB2D53}|DVLD.csproj|C:\\Users\\Administrator\\source\\repos\\DVLD Remote hole Project\\DVLD\\user\\frmaddupdateuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{77F14716-65AF-4C28-92E4-16AB33BB2D53}|DVLD.csproj|solutionrelative:user\\frmaddupdateuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "clsCountryData.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DVLD Remote hole Project\\DVLD_DataAccess\\clsCountryData.cs",
+              "RelativeDocumentMoniker": "..\\DVLD_DataAccess\\clsCountryData.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DVLD Remote hole Project\\DVLD_DataAccess\\clsCountryData.cs",
+              "RelativeToolTip": "..\\DVLD_DataAccess\\clsCountryData.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBIAAABjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T01:11:29.294Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "clsDriver.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DVLD Remote hole Project\\DVLD_DataAccess\\clsDriver.cs",
+              "RelativeDocumentMoniker": "..\\DVLD_DataAccess\\clsDriver.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DVLD Remote hole Project\\DVLD_DataAccess\\clsDriver.cs",
+              "RelativeToolTip": "..\\DVLD_DataAccess\\clsDriver.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-24T14:49:30.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "clsUser.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DVLD Remote hole Project\\DVLD_Buisness\\clsUser.cs",
+              "RelativeDocumentMoniker": "..\\DVLD_Buisness\\clsUser.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DVLD Remote hole Project\\DVLD_Buisness\\clsUser.cs",
+              "RelativeToolTip": "..\\DVLD_Buisness\\clsUser.cs",
+              "ViewState": "AQIAAHgAAAAAAAAAAAAvwKgAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T13:52:42.459Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "clsPersonData.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DVLD Remote hole Project\\DVLD_DataAccess\\clsPersonData.cs",
+              "RelativeDocumentMoniker": "..\\DVLD_DataAccess\\clsPersonData.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DVLD Remote hole Project\\DVLD_DataAccess\\clsPersonData.cs",
+              "RelativeToolTip": "..\\DVLD_DataAccess\\clsPersonData.cs",
+              "ViewState": "AQIAAAsBAAAAAAAAAAAIwBIBAABfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T16:00:26.091Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "clsDataAccessSettings.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DVLD Remote hole Project\\DVLD_DataAccess\\clsDataAccessSettings.cs",
+              "RelativeDocumentMoniker": "..\\DVLD_DataAccess\\clsDataAccessSettings.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DVLD Remote hole Project\\DVLD_DataAccess\\clsDataAccessSettings.cs",
+              "RelativeToolTip": "..\\DVLD_DataAccess\\clsDataAccessSettings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T22:33:02.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "clsErrorLogger.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DVLD Remote hole Project\\DVLD_DataAccess\\clsErrorLogger.cs",
+              "RelativeDocumentMoniker": "..\\DVLD_DataAccess\\clsErrorLogger.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DVLD Remote hole Project\\DVLD_DataAccess\\clsErrorLogger.cs",
+              "RelativeToolTip": "..\\DVLD_DataAccess\\clsErrorLogger.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T01:22:55.78Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "clsLicense.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DVLD Remote hole Project\\DVLD_DataAccess\\clsLicense.cs",
+              "RelativeDocumentMoniker": "..\\DVLD_DataAccess\\clsLicense.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DVLD Remote hole Project\\DVLD_DataAccess\\clsLicense.cs",
+              "RelativeToolTip": "..\\DVLD_DataAccess\\clsLicense.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAAABcAAABjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T01:22:59.689Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "clsApplication.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DVLD Remote hole Project\\DVLD_DataAccess\\clsApplication.cs",
+              "RelativeDocumentMoniker": "..\\DVLD_DataAccess\\clsApplication.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DVLD Remote hole Project\\DVLD_DataAccess\\clsApplication.cs",
+              "RelativeToolTip": "..\\DVLD_DataAccess\\clsApplication.cs",
+              "ViewState": "AQIAAHsBAAAAAAAAAADwvyYBAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T22:35:31.909Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "frmAddUpdateUser.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DVLD Remote hole Project\\DVLD\\User\\frmAddUpdateUser.cs",
+              "RelativeDocumentMoniker": "User\\frmAddUpdateUser.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DVLD Remote hole Project\\DVLD\\User\\frmAddUpdateUser.cs",
+              "RelativeToolTip": "User\\frmAddUpdateUser.cs",
+              "ViewState": "AQIAANsAAAAAAAAAAAD4v+kAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-03-14T13:51:53.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "frmAddUpdateUser.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DVLD Remote hole Project\\DVLD\\User\\frmAddUpdateUser.cs",
+              "RelativeDocumentMoniker": "User\\frmAddUpdateUser.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DVLD Remote hole Project\\DVLD\\User\\frmAddUpdateUser.cs [Design]",
+              "RelativeToolTip": "User\\frmAddUpdateUser.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-03-14T13:49:10.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "clsUserData.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DVLD Remote hole Project\\DVLD_DataAccess\\clsUserData.cs",
+              "RelativeDocumentMoniker": "..\\DVLD_DataAccess\\clsUserData.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DVLD Remote hole Project\\DVLD_DataAccess\\clsUserData.cs",
+              "RelativeToolTip": "..\\DVLD_DataAccess\\clsUserData.cs",
+              "ViewState": "AQIAAHsBAAAAAAAAAAAkwP8BAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T10:38:57.36Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
