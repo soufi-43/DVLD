@@ -4,7 +4,7 @@
 
 ## Table of Contents
 1. [Overview](#overview)
-2. [Core Services and Requirements](#Core-Services-and-Requirements)
+2. [Core Services and Requirements](#Core-Services)
 3. [Features](#Features)
 4. [Document and Test Requirements](#Document-and-Test-Requirements)
 5. [Architecture](#Architecture)
@@ -18,7 +18,7 @@ This project outlines the requirements for a system that manages people, request
 
 ---
 
-## Core-Services-and-Requirements 
+## Core-Services
 ### New License Issuance
 
 Initial license applications for specific categories (e.g., motorcycle, regular car, commercial).
@@ -95,6 +95,14 @@ This License Management System was developed with a **3-tier architecture** to e
 - **T-SQL**: Used to efficiently manage complex queries and optimize database interactions. Benefits of T-SQL include improved data handling, enhanced security features, and robust transaction management.
 - **Stored Procedures**: Enables efficient data handling and reduces redundancy in SQL code. Stored procedures improve performance and increase security by centralizing and encapsulating SQL operations.
 - **Encryption**: Applied to the logging system, ensuring sensitive information (such as user actions and authentication details) is securely stored.
+
+
+## Demo
+![Screenshot](DVLD/Resources/dvld.png)
+![Screenshot](DVLD/Resources/dvld3.png)
+![Screenshot](DVLD/Resources/dvld4.png)
+![Screenshot](DVLD/Resources/dvld5.png)
+![Screenshot](DVLD/Resources/DVLD2.png)
 
 ## Data Management
 All data operations are managed with a focus on data consistency, security, and performance. Unique constraints, referential integrity, and optimized indexing are applied to ensure smooth and reliable data operations. The logging system additionally includes encrypted entries to safeguard user activity records.
